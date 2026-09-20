@@ -1,25 +1,33 @@
-# AI Document Q&A Assistant (RAG) 🤖
+# 🤖 AI Document Q&A — RAG
 
-An end-to-end **Retrieval-Augmented Generation (RAG)** application that answers questions from your own documents.
+An end-to-end Retrieval-Augmented Generation application that answers questions from a user's own documents.
 
-## ✨ What it demonstrates
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
+![RAG](https://img.shields.io/badge/AI-RAG-purple)
+![FAISS](https://img.shields.io/badge/Vector%20Search-FAISS-green)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
 
-- Document ingestion and chunking
-- Sentence-transformer embeddings
-- FAISS vector similarity search
-- Retrieval-Augmented Generation
-- Prompt engineering
-- Streamlit interface
-- Source-aware responses
-- Modular AI engineering structure
+## 🧩 What It Does
+
+Documents are chunked, converted into embeddings, indexed for semantic search, and retrieved as context for an LLM-generated answer.
 
 ## 🧠 Architecture
 
 ```text
 Documents → Chunking → Embeddings → FAISS
-                                  ↓
 Question → Semantic Retrieval → Context → LLM → Answer + Sources
 ```
+
+## ✨ Key Features
+
+- PDF, TXT and Markdown ingestion
+- Document chunking
+- Sentence-transformer embeddings
+- FAISS similarity search
+- Retrieval-Augmented Generation
+- Source-aware answers
+- Streamlit interface
+- Modular Python architecture
 
 ## 📁 Structure
 
@@ -27,61 +35,40 @@ Question → Semantic Retrieval → Context → LLM → Answer + Sources
 AI-Document-QA-RAG/
 ├── app.py
 ├── requirements.txt
-├── .gitignore
 ├── .env.example
-├── README.md
 ├── data/
-│   └── README.md
-└── src/
-    ├── config.py
-    ├── document_loader.py
-    ├── vector_store.py
-    ├── rag_pipeline.py
-    └── ingest.py
+├── src/
+│   ├── config.py
+│   ├── document_loader.py
+│   ├── vector_store.py
+│   ├── rag_pipeline.py
+│   └── ingest.py
+└── README.md
 ```
 
-## 🚀 Setup
+## 🚀 Run
 
 ```bash
 python -m venv .venv
-# Windows
 .venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-Copy `.env.example` to `.env` and add your LLM API key.
-
-## ▶️ Run
-
-Add `.pdf`, `.txt`, or `.md` files to `data/`, then:
-
-```bash
 python src/ingest.py
 streamlit run app.py
 ```
 
-## 🎯 Example use cases
+Add your LLM API key to `.env` using the variables documented in `.env.example`.
 
-- College notes and syllabus assistant
-- Research-paper Q&A
-- Company policy assistant
-- Personal knowledge base
-- Technical documentation chatbot
-
-## 💼 Skills demonstrated
+## 🛠️ Skills
 
 **Python • NLP • Embeddings • Vector Search • FAISS • RAG • Prompt Engineering • LLM APIs • Streamlit**
 
-## 🔮 Future Improvements
+## 🔮 Roadmap
 
 - Conversational memory
 - Reranking
 - Hybrid retrieval
 - RAG evaluation metrics
 - Local LLM support
-- Docker and cloud deployment
+- Docker deployment
 
----
-⭐ Built as a practical AI engineering portfolio project.
+⭐ **Retrieve relevant context. Generate grounded answers.**
