@@ -82,15 +82,3 @@ Add the required LLM API key to `.env` using the variables documented in `.env.e
 > Portfolio project demonstrating an applied AI/NLP workflow. No API keys or secrets are stored in the repository.
 
 ⭐ **Retrieve relevant context → Generate grounded answers**
-
-
-## 📸 Project Demo
-
-> Add dashboard screenshots, model evaluation charts and a short demo GIF here so recruiters can understand the result before reading the code.
-
-### Suggested visuals
-- Problem / dataset overview
-- KPI or EDA chart
-- Model evaluation (confusion matrix / ROC-AUC where applicable)
-- Final dashboard or application
-
